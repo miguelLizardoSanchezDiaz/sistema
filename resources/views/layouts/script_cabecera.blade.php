@@ -8,9 +8,6 @@
 	<!-- ================== END BASE CSS STYLE ================== -->
 	
 	<!-- ================== BEGIN PAGE LEVEL CSS STYLE ================== -->
-	{!! Html::style('/assets/plugins/jquery-jvectormap/jquery-jvectormap.css') !!}
-    {!! Html::style('/assets/plugins/bootstrap-calendar/css/bootstrap_calendar.css') !!}
-    {!! Html::style('/assets/plugins/gritter/css/jquery.gritter.css') !!}
 	<!-- ================== END PAGE LEVEL CSS STYLE ================== -->
 
 	{!! Html::style('/assets/typeahead/typeahead.bundle.css') !!}

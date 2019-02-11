@@ -15,8 +15,8 @@
 	<!-- ================== BEGIN PAGE LEVEL JS ================== -->
     {!! Html::script('/assets/plugins/jquery-jvectormap/jquery-jvectormap.min.js') !!}
     {!! Html::script('/assets/plugins/jquery-jvectormap/jquery-jvectormap-world-merc-en.js') !!}
-    {!! Html::script('/assets/plugins/bootstrap-calendar/js/bootstrap_calendar.min.js') !!}
-    {!! Html::script('/assets/plugins/gritter/js/jquery.gritter.js') !!}
+    
+    
 	{!! Html::script('/assets/js/apps.min.js') !!}
 	<!-- ================== END PAGE LEVEL JS ================== -->
 

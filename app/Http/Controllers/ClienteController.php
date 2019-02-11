@@ -20,8 +20,6 @@ class ClienteController extends Controller
     }
     public function store(Request $request){
     	//Método para grabar los datos que fueron llenados en la vista nuevo(Create)
-    	
-    	
     	$request->validate([
     		'txt_dni' => 'required|unique:sistema.cliente,cli_codigo',
     		'txt_nombres' =>'required',
@@ -47,12 +45,16 @@ class ClienteController extends Controller
     }
     public function edit($id){
 		//Método para llamar a la vista dónde estará el formulario de edición(Update)
+		$registro=Cliente::findOrFail($id);
+        return view('cliente.editar', compact('registro'));
     }
     public function update(Request $request,$id){
     	//Método para editar los campos que fueron llenados en la vista edit(Update)
     }
     public function show($id){
     	//Método para mostrar mensaje de confirmación, antes de borrar(Destroy)
+    	$registro=Cliente::findOrFail($id);
+        return view('cliente.eliminar', compact('registro'));
     }
     public function destroy($id){
     	//Método que borra el registro confirmado(Destroy)
